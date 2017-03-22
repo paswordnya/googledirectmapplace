@@ -80,8 +80,8 @@ public class MapsActivity extends FragmentActivity implements
 
     //Google ApiClient
     private GoogleApiClient googleApiClient;
-    public static final String TAG = MapsActivity.class.getSimpleName();
     private LocationProvider mLocationProvider;
+    public static final String TAG = MapsActivity.class.getSimpleName();
     //Our buttons
     private Button buttonSetTo;
     private Button buttonSetFrom;
@@ -324,6 +324,8 @@ public class MapsActivity extends FragmentActivity implements
         getAddres();
         Log.e("Masuk", "step6");
         Toast.makeText(this, String.valueOf(latitude) + " "+ String.valueOf(longitude) ,Toast.LENGTH_SHORT).show();
+
+        Log.e("Latitude",  String.valueOf(latitude) + " " + String.valueOf(longitude));
     }
 
     @Override
